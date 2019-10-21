@@ -1,0 +1,26 @@
+.about { 
+    margin: 17vh 5vw 0vh 5vw;
+}
+
+.hero{
+    margin: 0;
+    padding: 55vh 0 0 7vw;
+    color: white;
+}
+
+.icons {
+    margin: 5vh 5vw 5vh 5vw;
+}
+
+.main {
+    height: 100vh;
+    background-image: url('../../assets/media/banner5.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#icon {
+    height: 8vw;
+    width: auto;
+}

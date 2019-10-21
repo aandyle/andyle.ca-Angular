@@ -1,0 +1,17 @@
+/* div of multiple cards */
+.cards {
+    align-items: flex-start;
+    justify-content: center;
+    margin: auto;
+}
+
+/* per-card styling */
+.card {
+    flex: inherit;
+    margin: 20px auto;
+    width: 40%;
+}
+
+.title { 
+    margin: 5vh 5vw 0vh 5vw;
+}

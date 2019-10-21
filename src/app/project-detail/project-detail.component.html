@@ -1,0 +1,159 @@
+<h4 class="mat-display-1 title">Projects</h4>
+
+<div class="cards" [ngStyle]="(isHandset$ | async) ? {'display':'block'} : {'display':'flex'}">
+    <mat-card class="card" [ngStyle]="(isHandset$ | async) ? {'width':'80%'} : {'width':'40%'}">
+        <mat-card-header>
+            <mat-card-title>Knight's Tour</mat-card-title>
+            <mat-card-subtitle>Java, Bootstrap</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="../../assets/media/projects/knightstour.png" alt="">
+        <mat-card-content>
+            <p>The Knight's Tour is a sequence of moves that permits the Knight to land on
+                each coordinate in a chess board only once. Choose between a strategy of random moves
+                or strategy based on a heuristics model. This program will show you what moves were made in
+                its attempt to land on each of the 64 coordinates only once.
+                Built with Java & Bootstrap, hosted on AWS with an Elastic Beanstalk/EC2 instance.
+                <a href="https://en.wikipedia.org/wiki/Knight%27s_tour" target="_blank">Wikipedia: Knight's Tour</a></p>
+        </mat-card-content>
+        <mat-card-actions>
+            <a mat-button href="http://knightstour.andyle.ca/" target="_blank">Demo</a>
+            <a mat-button href="https://github.com/aandyle/Knights-Tour" target="_blank">Code</a>
+        </mat-card-actions>
+    </mat-card>
+
+    <mat-card class="card" [ngStyle]="(isHandset$ | async) ? {'width':'80%'} : {'width':'40%'}">
+        <mat-card-header>
+            <mat-card-title>Sheridan Study</mat-card-title>
+            <mat-card-subtitle>Java, Bootstrap, MySQL</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="../../assets/media/projects/sheridanstudy.png" alt="">
+        <mat-card-content>
+            <p>A collaborative study application including features such as discussion boards, flashcards, and more.
+                Includes administrative features (contact me for access) to moderate discussion boards.
+                Built with Java & Bootstrap, hosted on
+                AWS with an Elastic Beanstalk/EC2 instance and MySQL RDS instance. Use 1/root as username/password
+                for "Student-level" access.</p>
+        </mat-card-content>
+        <mat-card-actions>
+            <a mat-button href="http://sheridanstudy.andyle.ca/" target="_blank">Demo</a>
+            <a mat-button href="https://github.com/aandyle/SheridanStudy" target="_blank">Code</a>
+        </mat-card-actions>
+    </mat-card>
+</div>
+
+<div class="cards" [ngStyle]="(isHandset$ | async) ? {'display':'block'} : {'display':'flex'}">
+    <mat-card class="card" [ngStyle]="(isHandset$ | async) ? {'width':'80%'} : {'width':'40%'}">
+        <mat-card-header>
+            <mat-card-title>AndyLe.ca</mat-card-title>
+            <mat-card-subtitle>Angular 8, Angular Material</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="../../assets/media/projects/portfolio.png" alt="">
+        <mat-card-content>
+            <p>My personal portfolio website. Designed to be fully responsive and of course, look nice! Built with
+                Angular 8
+                and Angular Material. Hosted on AWS with an S3 bucket and Route 53 routing a domain from Google Domains
+                and
+                various subdomains for projects. Previous revisions used Bootstrap, then Skeleton CSS, and finally
+                Angular.
+            </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <a mat-button href="http://andyle.ca/" target="_blank">Demo</a>
+            <a mat-button href="" target="_blank" disabled>Code</a>
+        </mat-card-actions>
+    </mat-card>
+
+    <mat-card class="card" [ngStyle]="(isHandset$ | async) ? {'width':'80%'} : {'width':'40%'}">
+        <mat-card-header>
+            <mat-card-title>Sheridan Jeopardy</mat-card-title>
+            <mat-card-subtitle>Java, Bootstrap</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="../../assets/media/projects/jeopardy2.png" alt="">
+        <mat-card-content>
+            <p>A Sheridan-themed version of Jeopardy! Two questions are picked at random from 25 questions in 5
+                categories
+                to be "Daily Doubles" (double the point value). Players play to beat the high score. The harder the
+                question, the higher the reward! Built with Java, demo unavailable at this time.
+            </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <a mat-button disabled>Demo</a>
+            <a mat-button href="https://github.com/aandyle/Sheridan-Jeopardy" target="_blank">Code</a>
+        </mat-card-actions>
+    </mat-card>
+</div>
+
+<div class="cards" [ngStyle]="(isHandset$ | async) ? {'display':'block'} : {'display':'flex'}">
+    <mat-card class="card" [ngStyle]="(isHandset$ | async) ? {'width':'80%'} : {'width':'40%'}">
+        <mat-card-header>
+            <mat-card-title>Price Checker</mat-card-title>
+            <mat-card-subtitle>PHP</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="../../assets/media/projects/pricecheck.png" alt="">
+        <mat-card-content>
+            <p>A program built to quickly compare prices of products at Canada Computers to competitiors such as
+                Amazon Canada. Using a barcode scanner, a UPC is entered and looked up on a UPC database site
+                (upcitemdb).
+                The program proceeds to query Canada Computers and Amazon for the model number. Prices for the product
+                are then displayed.
+                Hosted on Sheridan's LAMP (Linux, Apache, MySQL, PHP) server. Currently non-functional due to recent
+                updates to
+                the Canada Computers website.</p>
+        </mat-card-content>
+        <mat-card-actions>
+            <a mat-button href="http://le21.dev.fast.sheridanc.on.ca/Projects/CCPriceCompare/index.php" target="_blank">Demo</a>
+            <a mat-button href="https://github.com/aandyle/Price-Match" target="_blank">Code</a>
+        </mat-card-actions>
+    </mat-card>
+    <mat-card class="card" [ngStyle]="(isHandset$ | async) ? {'width':'80%'} : {'width':'40%'}">
+        <mat-card-header>
+            <mat-card-title>Briefcase</mat-card-title>
+            <mat-card-subtitle>PHP</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="../../assets/media/projects/briefcase.png" alt="">
+        <mat-card-content>
+            <p>A PHP based guessing game. </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <a mat-button href="http://le21.dev.fast.sheridanc.on.ca/Assignments/a4-andy-le/" target="_blank">Demo</a>
+            <a mat-button href="https://github.com/aandyle/Briefcase-Combo" target="_blank">Code</a>
+        </mat-card-actions>
+    </mat-card>
+</div>
+
+<div class="cards" [ngStyle]="(isHandset$ | async) ? {'display':'block'} : {'display':'flex'}">
+    <mat-card class="card" [ngStyle]="(isHandset$ | async) ? {'width':'80%'} : {'width':'40%'}">
+        <mat-card-header>
+            <mat-card-title>MLH Local Hackday 2018 (Hackathon)</mat-card-title>
+            <mat-card-subtitle>JavaScript (Express), Bootstrap</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="../../assets/media/projects/mlhhackday.png" alt="">
+        <mat-card-content>
+            <p>An online multiplayer concept platform developed in under 6 hours.
+                This is just a basic version of the game and there are no validations on this code. 
+                Tasks divided among team members with varying skill levels (first semester to third semester). 
+                Deployed to AWS Node Elastic Beanstalk instance.
+            </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <a mat-button href="http://mlhhackday2018.andyle.ca/home.html" target="_blank">Demo</a>
+            <a mat-button href="https://github.com/Sraavan/MLHHackday" target="_blank">Code</a>
+        </mat-card-actions>
+    </mat-card>
+    <mat-card class="card" [ngStyle]="(isHandset$ | async) ? {'width':'80%'} : {'width':'40%'}">
+        <mat-card-header>
+            <mat-card-title>ELEVATE 2018 Hackathon by TD</mat-card-title>
+            <mat-card-subtitle>HTML, CSS, InVision Prototype</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="../../assets/media/projects/elevate.png" alt="">
+        <mat-card-content>
+            <p>Competition against 500 people in many teams to build Smart City solutions. UX design for a mobile app. 
+                Work with team members to wireframe, design and present solution within a weekend.
+                Non-functional prototype/concept for demonstration purposes only.</p>
+        </mat-card-content>
+        <mat-card-actions>
+            <a mat-button href="https://invis.io/SCO79BMDYRW" target="_blank">Demo</a>
+            <a mat-button href="https://github.com/KeenanDs/WalkT.O-Prototype" target="_blank">Code</a>
+        </mat-card-actions>
+    </mat-card>
+</div>

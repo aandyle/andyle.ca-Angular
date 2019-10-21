@@ -1,0 +1,15 @@
+.contact {
+    margin: 5vh 5vw 0vh 5vw;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    text-align: center;
+}
+
+mat-button {
+    padding: 0 50vh;
+}
