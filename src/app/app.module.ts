@@ -26,10 +26,10 @@ import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontaweso
 // import { faStackOverflow, faGithub, faMedium } from '@fortawesome/free-brands-svg-icons';
 
 const appRoutes: Routes = [
-  { path: '', redirectTo: 'About', pathMatch: 'full' },
   { path: 'About', component: AboutComponent },
   { path: 'Projects', component: ProjectDetailComponent },
-  { path: 'Contact', component: ContactComponent }
+  { path: 'Contact', component: ContactComponent },
+  { path: '', redirectTo: 'About', pathMatch: 'full' }
 ]
 
 @NgModule({
